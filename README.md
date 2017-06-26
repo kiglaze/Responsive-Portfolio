@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-Portfolio assignment wk 2. 
+# Basic-Portfolio
+Coding bootcamp hw for 6.21.17. Portfolio.
