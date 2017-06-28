@@ -1,217 +1,205 @@
-	body {
-		color: #777777;
-		font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-		background-image: url("../images/concrete-texture.png");
-		background-color: #dee3ea;
-	}
-	.connect-menu img {
-		width: 30%;
-		height: 30%;
-		display: inline;
-	}
-	.clearfix::after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-	header {
-		height: 10%;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		background-color: white;
-		position: fixed;
-		top: 0%;
-		z-index: 5;
-		border-bottom: 2px solid #dddddd;
-	}
-	h1 {
-		background-color: #4aaaa5;
-		color: #ffffff;
-		text-align: center;
-		display: block;
-		width: 30%;
-		font-size: 2em;
-		border-color: #ffffff;
-		padding: 1% 2%;
-		margin: 0% 2% 0% 2%;
-	}
-	h2, h3 {
-		color: #4aaaa5;
-		font-family: 'Georgia', Times, Times New Roman, serif;
-		border-bottom: 2px solid #dee3ea;
-	}
-	h2 {
-		font-size: 2em;
-	}
-	h3 {
-		font-size: 1.5em;
-	}
-	div.portfolio-selections-container {
-	}
+body {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/concrete-texture.png");
+	background-color: #dee3ea;
+}
+.connect-menu img {
+	width: 30%;
+	height: 30%;
+	display: inline;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+header {
+	height: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	position: fixed;
+	top: 0%;
+	z-index: 5;
+	border-bottom: 2px solid #dddddd;
+}
+h1 {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	width: 30%;
+	font-size: 2em;
+	border-color: #ffffff;
+	padding: 1% 2%;
+	margin: 0% 2% 0% 2%;
+}
+h2, h3 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: 2px solid #dee3ea;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.5em;
+}
+div.portfolio-selections-container {
+}
+div.portfolio-selection {
+	width: 45%;
+	height: 50%;
+	display: inline-block;
+	margin: 0% 2% 1% 0%;
+}
+div.portfolio-selection a {
+	text-decoration: none;
+}
+div.portfolio-selection img {
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+div.portfolio-selection h4 {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	text-align: center;
+	position: relative;
+	bottom: 25px;
+	z-index: 4;
+	padding: 2% 0%;
+}
+main {
+	margin: 10% 0% 10% 0%;
+}
+div.main-content {
+	padding: 2%;
+	display: flex;
+	justify-content: space-between;
+	height: 80%;
+	overflow-y: scroll;
+}
+nav {
+	float: right;
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	padding: 1.5% 0% 1% 1%;
+}
+nav > a {
+	color: #6a6b6d;
+	text-align: center;
+	height: auto;
+}
+section {
+	background-color: #ffffff;
+	width: 60%;
+	padding: 2% 3% 2% 3%;
+} 
+section h2 {
+	margin: 0% 0% 2% 0%;
+}
+section label {
+	display: block;
+}
+aside {
+	background-color: #ffffff;
+	width: 25%;
+	height: 100%;
+	padding: 2% 1% 1% 1%;
+}
+aside div.logo-links-container {
+	margin: 3% 0%;
+}
+footer {
+	background-color: #6a6b6d;
+	color: #dee3ea;
+	text-align: center;
+	display: block;
+	height: 5%;
+	width: 100%;
+	border-top: 0.5em solid #4aaaa5;
+	padding: 1% 0%;
+	position: fixed;
+	bottom: 0%;
+	z-index: 5;
+}
+input, .field-area {
+	margin: 2% 0%;
+}
+input.form-submit {
+	background-color: #4aaaa5;
+	color: white;
+	text-decoration: none;
+	border: none;
+	padding: 1% 3%;
+}
+p {
+	text-indent: 50px;
+}
+.field .field-area {
+	width: 95%;
+}
+
+@media screen and (max-width: 980px) {
 	div.portfolio-selection {
-		width: 45%;
-		height: 50%;
-		display: inline-block;
-		margin: 0% 2% 1% 0%;
-	}
-	div.portfolio-selection a {
-		text-decoration: none;
-	}
-	div.portfolio-selection img {
+		display: block;
 		width: 100%;
-		height: 100%;
-		z-index: 2;
+		height: auto;
 	}
-	div.portfolio-selection h4 {
-		background-color: #4aaaa5;
-		color: #ffffff;
-		font-family: 'Georgia', Times, Times New Roman, serif;
-		text-align: center;
-		position: relative;
-		bottom: 25px;
-		/*	bottom: 3%;*/
-		z-index: 4;
-		padding: 2% 0%;
-	}
-	main {
-		margin: 10% 0% 10% 0%;
+}
+@media screen and (max-width: 768px) {
+	div.portfolio-selection {
+		width: 47%;
+		height: 47%;
+		display: inline-block;
 	}
 	div.main-content {
-		padding: 2%;
-		display: flex;
-		justify-content: space-between;
-		height: 80%;
-		/*	overflow: scroll;*/
-		overflow-y: scroll;
+		display: block;
 	}
-	nav {
-		float: right;
-		display: flex;
-		justify-content: space-between;
-		width: 40%;
-		padding: 1.5% 0% 1% 1%;
+	div.main-content section, aside {
+		margin: 0;
+		margin-bottom: 2%;
+		width: 80%;
 	}
-	nav > a {
-		color: #6a6b6d;
-		text-align: center;
-/*	display: flex;
-justify-content: center;*/
-height: auto;
+	aside.connect-menu div.logo-links-container {
+		width: 50%;
+		height: auto;
+	}
 }
-/*nav > a:first-child ~ a {
-	border-left: 2px solid #dee3ea;
-	border-right: 2px solid #dee3ea;
-	padding-left: 2px;
-	margin-left: 8px;
-	}*/
-	section {
-		background-color: #ffffff;
-		width: 60%;
-		padding: 2% 3% 2% 3%;
-	} 
-	section h2 {
-		margin: 0% 0% 2% 0%;
-	}
-	section label {
-		display: block;
-	}
-	aside {
-		background-color: #ffffff;
-		width: 25%;
-		height: 100%;
-		padding: 2% 1% 1% 1%;
-	}
-	aside div.logo-links-container {
-		margin: 3% 0%;
-	}
-	footer {
-		background-color: #6a6b6d;
-		color: #dee3ea;
-		text-align: center;
-		display: block;
-		height: 5%;
+@media screen and (max-width: 640px) {
+	nav {
+		background-color: white;
 		width: 100%;
-		border-top: 0.5em solid #4aaaa5;
-		padding: 1% 0%;
-		position: fixed;
-		bottom: 0%;
-		z-index: 5;
+		justify-content: space-around;
+		padding-bottom: 1.5%;
 	}
-	input, .field-area {
-		margin: 2% 0%;
+	header {
+		display: block;
 	}
-	input.form-submit {
-		background-color: #4aaaa5;
-		color: white;
-		text-decoration: none;
-		border: none;
-		padding: 1% 3%;
+	header h1 {
+		width: 100%;
+		margin: 0;
 	}
-	p {
-		text-indent: 50px;
+	div.main-content section, aside {
+		margin-top: 10%;
+		width: 90%;
 	}
-
-	@media screen and (max-width: 980px) {
-		section {
-			background-color: red;
-		}
-		div.portfolio-selection {
-			display: block;
-			width: 100%;
-			height: auto;
-		}
+	aside.connect-menu div.logo-links-container {
+		width: 50%;
+		height: auto;
 	}
-	@media screen and (max-width: 768px) {
-		section {
-			background-color: orange;
-		}
-		div.portfolio-selection {
-			width: 47%;
-			height: 47%;
-			display: inline-block;
-		}
+	div.main-content {
+		display: block;
+		margin-top: 10%;
 	}
-	@media screen and (max-width: 640px) {
-		section {
-			background-color: blue;
-		}
-		nav {
-			background-color: white;
-			width: 100%;
-			justify-content: space-around;
-			padding-bottom: 1.5%;
-		}
-		header {
-			display: block;
-		}
-		header h1 {
-			width: 100%;
-			margin: 0;
-		}
-		aside, section {
-/*			flex-direction: row;
-			order: 1;
-			display: block;*/
-			width: 100%;
-/*			margin: 0;
-			margin-top: 3%;*/
-			margin-top: 6%;
-		}
-		aside.connect-menu div.logo-links-container {
-			height: 30px;
-			width: 30px;
-		}
-		.field .field-area {
-			width: 100%;
-		}
-		div.main-content {
-			display: block;
-		}
-		div.portfolio-selection {
-			display: block;
-			width: 100%;
-			height: auto;
-		}
+	div.portfolio-selection {
+		display: block;
+		width: 100%;
+		height: auto;
 	}
-
+}
